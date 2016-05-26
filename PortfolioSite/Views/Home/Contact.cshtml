@@ -1,0 +1,36 @@
+﻿@{
+    ViewBag.Title = "Contact";
+}
+<body class="contact-body">
+    <div class="container">
+        <ul class="nav nav-pills">
+            <li>@Html.ActionLink("Home", "Index", "Home")</li>
+            <li>@Html.ActionLink("About", "About", "Home")</li>
+            <li>@Html.ActionLink("Projects", "Index", "Projects")</li>
+            <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+        </ul>
+    </div>
+    <div class="container text-center contact-container">
+        <h1 class="contact-header">@ViewBag.Title</h1>
+        <div class="socialmedia">
+            <a href="http://www.github.com/katherinebeam">
+                <img width="50" class="git-socialicon" src="~/Content/img/GitHubLogo.png" />
+            </a>
+            <a href="https://www.linkedin.com/in/katherinebeam">
+                <img width="50" class="img-circle social-icon" src="~/Content/img/linkedin-icon.png" />
+            </a>
+            <a href="https://www.facebook.com/hgjfsgdhjfjgh">
+                <img width="50" class="img-circle social-icon" src="~/Content/img/white_facebook_icon.png" /> 
+            </a>
+            <a href="mailto:katherinealexandrabeam@gmail.com?Subject=Hello%20Katherine">
+                <img width="50" class="img-circle social-icon" style="padding:5px;" src="~/Content/img/white_email_icon.png" />
+            </a>
+            <a href="tel:4405705524">
+                <img height="50" width="50" style="padding:7px;" class="img-circle social-icon" src="~/Content/img/white_phone_icon.png" />
+            </a>
+        </div>
+        @*<div class="contact-info">
+            <p>Phone: (440) 570-5524</p>
+            <p>Email: katherinealexandrabeam@gmail.com</p>
+        </div>*@
+    </div>        

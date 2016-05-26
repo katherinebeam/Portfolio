@@ -1,0 +1,23 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<body class="front-page">
+    <div class="cover-container">
+
+        <div class="masthead clearfix">
+            <div class="inner">
+                <nav>
+                    <ul class="nav masthead-nav about-nav">
+                        <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                        <li>@Html.ActionLink("About", "About", "Home")</li>
+                        <li>@Html.ActionLink("Projects", "Index", "Projects")</li>
+                        <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    </ul>
+                </nav>
+             </div>
+                <div class="front-text">
+                    <h1 id="masthead-heading">Katherine<br />Alexandra<br />Beam</h1>
+                    <h2 id="heading">Web Developer</h2>
+                </div>
+            </div>
