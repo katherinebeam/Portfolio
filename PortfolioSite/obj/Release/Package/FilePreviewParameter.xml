@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="katherinealexandrabeam" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\WeCanCodeIT\\documents\\visual\ studio\ 2015\\Projects\\PortfolioSite\\PortfolioSite\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^C:\\Users\\WeCanCodeIT\\documents\\visual\ studio\ 2015\\Projects\\PortfolioSite\\PortfolioSite\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="PortfolioDBEntities-Web.config Connection String" description="" value="metadata=res://*/Models.ProjectModel.csdl|res://*/Models.ProjectModel.ssdl|res://*/Models.ProjectModel.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=WECANCODEIT-34\SQLEXPRESS;initial catalog=PortfolioDB;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework&quot;" tags="">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\WeCanCodeIT\\documents\\visual\ studio\ 2015\\Projects\\PortfolioSite\\PortfolioSite\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='PortfolioDBEntities']/@connectionString" />
+  </parameter>
+</parameters>

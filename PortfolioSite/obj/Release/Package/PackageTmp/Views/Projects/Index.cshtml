@@ -1,0 +1,48 @@
+﻿@model IEnumerable<PortfolioSite.Models.Project>
+
+@{
+    ViewBag.Title = "Index";
+}
+<body class="contact-body">
+    <div class="container-fluid">
+        <ul class="nav nav-pills">
+            <li>@Html.ActionLink("Home", "Index", "Home")</li>
+            <li>@Html.ActionLink("About", "About", "Home")</li>
+            <li>@Html.ActionLink("Projects", "Index", "Projects")</li>
+            <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+        </ul>
+    </div>
+    <div class="contact-container container-fluid">
+
+        @*@Html.ActionLink("Create New", "Create")*@
+
+            <div class="col-md-4 col-xs-12 menu">
+                <h2 class="project-header">Katherine Beam</h2>
+                <h5 style="letter-spacing: 5px; color: rgba(210,210,210,0.8);">Web Developer</h5>
+            </div>
+            <div class="col-md-8 col-xs-12 project-div">
+            @foreach (var item in Model)
+            {
+                <div class="col-md-6 col-sm-6 col-xs-12 gallery">
+                    <div id="box" style="background-image: url(@item.ProjectImageURL)">
+                        <div id="overlay">
+                            <p id="description" class="text-center"><span style="font-size: 30px;margin-bottom:5px;">@item.ProjectTitle</span><br />@item.ProjectDescription</p><br />
+                            <a href="@item.GitHubLink" target="_blank">
+                                <img src="~/Content/img/GitHubLogo.png" alt="GitHub logo"/>
+                            </a>
+                            @if (item.ProjectLink != null)
+                            {
+                                <a href="@item.ProjectLink" target="_blank">
+                                    <img width="40" src="~/Content/img/white_link_icon.png" alt="@item.ProjectTitle link"/>
+                                </a>
+                            }
+
+                            @*@Html.ActionLink("Edit", "Edit", new { id=item.ProjectID })
+                            @Html.ActionLink("Details", "Details", new { id=item.ProjectID })
+                            @Html.ActionLink("Delete", "Delete", new { id=item.ProjectID })*@
+                        </div>          
+                    </div>
+                </div>
+            }
+            </div>
+        </div>

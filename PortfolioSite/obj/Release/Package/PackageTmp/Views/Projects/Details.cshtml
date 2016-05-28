@@ -1,0 +1,66 @@
+﻿@model PortfolioSite.Models.Project
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Project</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ProjectTitle)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProjectTitle)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProjectDescription)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProjectDescription)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LanguagesUsed)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LanguagesUsed)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProjectImageURL)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProjectImageURL)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProjectLink)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProjectLink)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GitHubLink)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GitHubLink)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ProjectID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

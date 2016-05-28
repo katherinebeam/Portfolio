@@ -34,6 +34,17 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <PublishDatabaseSettings>
+      <Objects>
+        <ObjectGroup Name="PortfolioDBEntities-Deployment" Order="1">
+          <Destination Path="" />
+          <Object Type="DbFullSql">
+            <PreSource Path="Data Source=WECANCODEIT-34\SQLEXPRESS%3bInitial Catalog=PortfolioDB%3bIntegrated Security=True%3bApplication Name=EntityFramework" ScriptSchema="True" ScriptData="True" CopyAllFullTextCatalogs="False" DriDefaults="True" />
+            <Source Path="obj\Debug\AutoScripts\PortfolioDBEntities-Deployment_SchemaAndData.sql" Transacted="True" />
+          </Object>
+        </ObjectGroup>
+      </Objects>
+    </PublishDatabaseSettings>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -197,6 +208,7 @@
     <Content Include="Models\ProjectModel.edmx.diagram">
       <DependentUpon>ProjectModel.edmx</DependentUpon>
     </Content>
+    <None Include="Properties\PublishProfiles\katherinealexandrabeam.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\portfolio-projects.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />

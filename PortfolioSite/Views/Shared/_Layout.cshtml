@@ -16,6 +16,29 @@
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
+<script>
+    $(document).ready(function(){
+        $('.email').hover(function() {
+            $('.email-img').hide();
+            $('.email-address').fadeIn();
+        },
+            function () {
+                $('.email-address').hide(); 
+                $('.email-img').fadeIn();
+            });
+
+        $('.phone').hover(function () {
+            $('.phone-img').hide();
+            $('.phone-number').fadeIn();
+        },
+            function() {
+                $('.phone-number').hide();
+                $('.phone-img').fadeIn();
+            });
+     });
+    
+
+</script>
     @RenderSection("scripts", required: false)
 </body>
 </html>

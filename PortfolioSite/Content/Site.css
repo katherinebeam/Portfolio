@@ -379,7 +379,7 @@ p#description {
 }
 
 .social-icon {
-    border: 3px solid white;
+    border: 7px solid white;
     margin-left: 15px;
     opacity: 1;
     -webkit-transition: opacity .5s ease;
@@ -410,6 +410,39 @@ p#description {
     padding-bottom: 8%;
 }
 
+.email-address {
+   display:none;
+   width:115px;
+    padding-top: 46px;
+    padding-bottom:46px;
+    /*padding-right: 0px;*/
+    /*padding-left: inherit;*/
+    font-size: 9px;
+    text-transform:uppercase;
+    -webkit-transition: opacity .5s ease;
+    /*margin-left:5.5px;*/
+    letter-spacing: .4px;
+}
+
+.email-address:hover {
+    opacity: 1;
+}
+
+.phone-number {
+    display:none;
+    padding-top: 45px;
+    padding-bottom:45px;
+    padding-right: inherit;
+    padding-left: 2pxpx;
+    font-size: 11px;
+    -webkit-transition: opacity .5s ease;
+    letter-spacing: 2px;
+
+}
+
+.phone-number:hover {
+    opacity: 1;
+}
 /********* MEDIA QUERIES **********/
 @media (min-width: 768px) {
   .masthead {

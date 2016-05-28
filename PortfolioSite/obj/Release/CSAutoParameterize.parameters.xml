@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="PortfolioDBEntities-Web.config Connection String" description="PortfolioDBEntities Connection String used in web.config by the application to access the database." defaultValue="metadata=res://*/Models.ProjectModel.csdl|res://*/Models.ProjectModel.ssdl|res://*/Models.ProjectModel.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=WECANCODEIT-34\SQLEXPRESS;initial catalog=PortfolioDB;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework&quot;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\WeCanCodeIT\\documents\\visual\ studio\ 2015\\Projects\\PortfolioSite\\PortfolioSite\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='PortfolioDBEntities']/@connectionString" />
+  </parameter>
+</parameters>
